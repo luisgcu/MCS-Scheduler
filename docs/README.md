@@ -20,7 +20,7 @@ Within our AC drive portfolio  we don't have   any that can do time based start/
 
 Scheduler has 3 instances available that are  can be setup  separated .  The picture below illustrate the option for scheduler1 .
 
-![Scheduler FB]([https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20instance.jpg](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler instance.jpg))
+![Single Instance](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20instance.jpg)
 
 **For the scheduler to works need to be enable first along with the week day required to work.**
 
@@ -40,13 +40,7 @@ The next setup required is to set the desire hour we want the drive to turn on t
 
 The 3 scheduler instances are combined by a logic OR  as we show below .  The OR output is linked to M18.050.
 
-
-
-![LINK]([https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20general%20view.jpg](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler general view.jpg))
-
-
-
-
+![The 3 Scheduler Instances](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20general%20view.jpg)
 
 
 
