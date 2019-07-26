@@ -42,7 +42,7 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 ![The 3 Scheduler Instances](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20general%20view.jpg)
 
-
+.. to be continued.. 
 
 
 
