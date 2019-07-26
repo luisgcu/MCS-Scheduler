@@ -18,6 +18,38 @@ Within our AC drive portfolio  we don't have   any that can do time based start/
 
 ### How it works.
 
+Scheduler has 3 instances available that are  can be setup  separated .  The picture below illustrate the option for scheduler1 .
+
+![Scheduler FB]([https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20instance.jpg](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler instance.jpg))
+
+**For the scheduler to works need to be enable first along with the week day required to work.**
+
+**Scheduler 1 enable** : M18.031  |  **Scheduler 1 weeks day enable** M18.032 {Monday} ...M18.038{Sunday}
+
+**Scheduler 2 enable** : M18.039  |  **Scheduler 2 weeks day enable** M18.040{Monday} ...M18.046{Sunday}
+
+**Scheduler 3 enable** :  M19.031 | **Scheduler 3 weeks day enable** M19.032{Monday} ...M19.046{Sunday}
+
+The next setup required is to set the desire hour we want the drive to turn on the motor and the hour to turn off.  In this case we just use the hour to setup the hourly schedule. 
+
+**Scheduler 1 hour to start motor** : M18.011 | **Scheduler 1 hour to stop motor** :M18.012
+
+**Scheduler 2 hour to start motor** : M18.013 | **Scheduler 2 hour to stop motor** :M18.014
+
+**Scheduler 3 hour to start motor** : M18.015 | **Scheduler 3 hour to stop motor** :M18.016
+
+The 3 scheduler instances are combined by a logic OR  as we show below .  The OR output is linked to M18.050.
+
+
+
+![LINK]([https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20general%20view.jpg](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler general view.jpg))
+
+
+
+
+
+
+
 
 
 
