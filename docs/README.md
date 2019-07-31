@@ -44,9 +44,7 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 ### Detailed Setup
 
-1- Step is to clone this repository to a location to you PC.  
-
-to do that  just click "clone or download"  and the click download  as ZIP. 
+1- Clone this repository to a location in  your PC, to do that  just click "clone or download"  and the click download  as ZIP. 
 
 ![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/Download%20repository.jpg)
 
