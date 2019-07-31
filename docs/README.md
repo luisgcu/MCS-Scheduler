@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: ./
+---
+
 # Scheduler for M70x/M600
 ### Introduction
 
@@ -48,11 +52,17 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 ![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/Download%20repository.jpg)
 
-2- Unzip de content a know location.
-
-3- The binfiles_drives folder has the binary file compiled for M600/700/701, using the Unidrive M connect we can upload the PLC program.
+2- Unzip de content a known location in your PC.
 
 ![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/binfiles%20folder.jpg)
+
+3- The binfiles_drives folder have the binary file compiled for M600/700/701, using the Unidrive M connect upload the PLC program.
+
+4-With   unidrive M connect you will be able to download the scheduler PLC program to the drive. Make sure you pick the correct binary file name that match the drive you are connected. 
+
+![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/DeployUserProgram%20Mconnect.jpg)
+
+
 
 
 
