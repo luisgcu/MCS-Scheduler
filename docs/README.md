@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./
----
-
 # Scheduler for M70x/M600
 ### Introduction
 
@@ -48,19 +44,26 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 ### Detailed Setup
 
-1- Clone this repository to a location in  your PC, to do that  just click "clone or download"  and the click download  as ZIP. 
+**1-** Clone this repository to a location in  your PC, to do that  just click "clone or download"  and the click download  as ZIP. 
 
 ![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/Download%20repository.jpg)
 
-2- Unzip de content a known location in your PC.
+**2-** Unzip de content a known location in your PC.
 
 ![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/binfiles%20folder.jpg)
 
-3- The binfiles_drives folder have the binary file compiled for M600/700/701, using the Unidrive M connect upload the PLC program.
+**3-** The binfiles_drives folder have the binary file compiled for M600/700/701, using the Unidrive M connect upload the PLC program.
 
-4-With   unidrive M connect you will be able to download the scheduler PLC program to the drive. Make sure you pick the correct binary file name that match the drive you are connected. 
+**4-**With   unidrive M connect you will be able to download the scheduler PLC program to the drive. Make sure you pick the correct binary file name that match the drive you are connected. 
 
-![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/DeployUserProgram%20Mconnect.jpg)
+![DEPLOY USER PROG](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/DeployUserProgram%20Mconnect.jpg)
+
+**5-** For easy setup of the scheduler when using  M connect we provide 2 files that are required to be copied into your Drive M connect project, the files are inside  MConnect folder of this repository,  these  files are.
+
+-  **Scheduler.macro** , it has to be copied to your drive Mconnect Macro folder, you can do that on M connect doing right click over the Macro Files folder and then click add files. When the  Macro is successfully added to project you will have the option to download the macro to the drive ( if you are connected  or to Load the values if your are working offline).
+- **Scheduler.customlist** , it has to be copied to your Drive Mconnect  custom list folder. 
+
+
 
 
 
