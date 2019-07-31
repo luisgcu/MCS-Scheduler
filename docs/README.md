@@ -48,7 +48,7 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 to do that  just click "clone or download"  and the click download  as ZIP. 
 
-![]([https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/Download%20repository.jpg])
+![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/Download%20repository.jpg)
 
 
 
