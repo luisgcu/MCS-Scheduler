@@ -18,7 +18,7 @@ Within our AC drive portfolio  we don't have   any that can do time based start/
 
 ### How it works.
 
-Scheduler has 3 instances available that are  can be setup  separated .  The picture below illustrate the option for scheduler1 .
+Scheduler has 3 instances available that are  can be setup  separated .  The picture below illustrate the option for scheduler2 .
 
 ![Single Instance](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20instance.jpg)
 
@@ -42,7 +42,9 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 ![The 3 Scheduler Instances](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20general%20view.jpg)
 
-.. to be continued.. 
+### Detailed Setup
+
+ 
 
 
 
