@@ -18,11 +18,11 @@ Within our AC drive portfolio  we don't have   any that can do time based start/
 
 ### How it works.
 
-Scheduler has 3 instances available that are  can be setup  separated .  The picture below illustrate the option for scheduler2 .
+Scheduler has 3 instances available that are  can be used   separated .  The picture below illustrate the option for scheduler2 .
 
 ![Single Instance](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20instance.jpg)
 
-**For the scheduler to works need to be enable first along with the week day required to work.**
+**For the scheduler to work need to be enable first, it also require the user select the days of the week  required the scheduler to operate .**
 
 **Scheduler 1 enable** : M18.031  |  **Scheduler 1 weeks day enable** M18.032 {Monday} ...M18.038{Sunday}
 
@@ -48,7 +48,11 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 ![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/Download%20repository.jpg)
 
+2- Unzip de content a know location.
 
+3- The binfiles_drives folder has the binary file compiled for M600/700/701, using the Unidrive M connect we can upload the PLC program.
+
+![](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/binfiles%20folder.jpg)
 
 
 
