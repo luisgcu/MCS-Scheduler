@@ -58,9 +58,12 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 ![DEPLOY USER PROG](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/DeployUserProgram%20Mconnect.jpg)
 
-**5-** For easy setup of the scheduler when using  M connect we provide 2 files that are required to be copied into your Drive M connect project, the files are inside  MConnect folder of this repository,  these  files are.
+**5-** For easy setup of the scheduler when  unidrive   M connect is used  we provide 2 files that are required to be copied into your Drive M connect project, the files are inside  [MConnect folder ](https://github.com/luisgcu/RTC-Scheduler/tree/master/Mconnect) of this repository,  these  files are.
 
--  **Scheduler.macro** , it has to be copied to your drive Mconnect Macro folder, you can do that on M connect doing right click over the Macro Files folder and then click add files. When the  Macro is successfully added to project you will have the option to download the macro to the drive ( if you are connected  or to Load the values if your are working offline).
+- **Scheduler.macro** , Copy the file  to your drive Mconnect Macro folder,  to do that on the Unidrive  M connect ,  right click over the Macro Files folder and then click add files, when the  Macro is successfully added to project you will have the option to download the macro to the drive ( if you are connected  or to load the values if your are working offline), the main reason to  use the macro is because the application menu register's listed on it has the short names used on the  application menu registers 18 and 19.
+
+  
+
 - **Scheduler.customlist** , it has to be copied to your Drive Mconnect  custom list folder. 
 
 
