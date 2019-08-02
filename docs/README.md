@@ -62,9 +62,13 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 - **Scheduler.macro** , Copy the file  to your drive Mconnect Macro folder,  to do that on the Unidrive  M connect ,  right click over the Macro Files folder and then click add files, when the  Macro is successfully added to project you will have the option to download the macro to the drive ( if you are connected  or to load the values if your are working offline), the main reason to  use the macro is because the application menu register's listed on it has the short names used on the  application menu registers 18 and 19.
 
-  
+  ![MACRO ](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/MacroFile.jpg) .
 
-- **Scheduler.customlist** , it has to be copied to your Drive Mconnect  custom list folder. 
+- **Scheduler.customlist** , Copy the file into your drive M connect project custom list folder. To do it just  right click over the  custom list folder and select add files and look for the Scheduler.customlist, after successfully added the file you can open it, if your are connected to the drive you can start editing the scheduler parameters.
+
+  ![Custom list ](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/CustomList.jpg)
+
+  
 
 
 
