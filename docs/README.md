@@ -1,9 +1,9 @@
 # Scheduler for M70x/M600
 ### Introduction
 
-Some drive applications require  the motor operation during certain hour range during a  day  and the week.  Is pretty common in some application user want to avoid motor operation during peak hours ( for non critical applications)  because the electricity tariff are higher than the normal hourly operation.
+Some drive applications require  the motor operation during certain period of time  during and specific week   days .   For example is  pretty common in some application user want to avoid motor operation during peak hours ( for non critical applications)  during peak time the electricity tariff usually are higher than the normal hourly operation.
 
-Within our AC drive portfolio  we don't have   any that can do time based start/stop schedule.  Fortunately we have available RTC keypad that can be use as  real time source to implement  scheduled  start/stop of a motor.  The Keypad by itself is unable to do the scheduler that we need, but our drives has a internal PLC can be used to write a piece of code  that can has the logic for the hourly control required. 
+Within our AC drive portfolio  we don't have   any that can do time based start/stop schedule.  Fortunately we have available RTC keypad that can be use as  real time source to implement  scheduled  start/stop of a motor controlled by the drive .  The Keypad by itself is unable to do the scheduler that we need, but our drives has a internal PLC can be used to write a piece of code  that can run  the logic for the hourly control required. 
 
 ### Hardware Requirements.
 
