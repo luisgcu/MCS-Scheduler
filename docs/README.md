@@ -56,16 +56,16 @@ The Parameter that activate that macro is [M18.P029] the value to have the macro
 ```c
 //macro to setup the  drive to start stop based on the scheduler
 IF (gvl.enbl_mcr =1234 AND first_shoot=TRUE) THEN   // gvl.enbl_mcr 	:= M18.P029; 	
-	M08.P022	:=	0.00; 		//clear destination [default is M06.030] RunFwd
-	M09.P004	:=	18.050;   	// Logic Fucntion 1 source1-->Asigns the Schduler ouput to the  funtion 
-    M09.P006    :=  0.00;	    // Logic Function 1 Source 2-->Make sure the source is clear
-	M09.P007    :=  TRUE;       // Logic Function 1 Source 2 invert
-	M09.P008    :=  FALSE;      // Logic Function 1 Output invert. 
-	M09.P010    :=  6.030;      // Logic Funtion 1 Destination  set to Pr [6.030] RunFwd
-	M10.P000	:=	1001;    	//Save Parameters
-	M10.P038	:= 	100; 	 	//Reset Drive
-	Wait_Time(T#400MS);         //Delay for 400ms after save and reset. 
-	first_shoot := FALSE;       //Run this  section once once	
+	M08.P022	:=	0.00; 	//clear destination [default is M06.030] RunFwd
+	M09.P004	:=	18.050; // Logic Fucntion 1 source1-->Asigns the Schduler ouput to the  funtion 
+    M09.P006    :=  0.00;	// Logic Function 1 Source 2-->Make sure the source is clear
+	M09.P007    :=  TRUE;   // Logic Function 1 Source 2 invert
+	M09.P008    :=  FALSE;  // Logic Function 1 Output invert. 
+	M09.P010    :=  6.030;  // Logic Funtion 1 Destination  set to Pr [6.030] RunFwd
+	M10.P000	:=	1001;   //Save Parameters
+	M10.P038	:= 	100; 	//Reset Drive
+	Wait_Time(T#400MS);     //Delay for 400ms after save and reset. 
+	first_shoot := FALSE;   //Run this  section once once	
 END_IF
 
 ```
