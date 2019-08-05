@@ -70,7 +70,7 @@ END_IF
 
 ```
 
-[Logic Function 1 setup by the Macro](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/Logic%20Function%201.jpg)
+![Logic Function 1 setup by the Macro](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/Logic%20Function%201.jpg)
 
 ------
 
