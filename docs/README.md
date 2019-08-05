@@ -64,9 +64,11 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
   ![MACRO ](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/MacroFile.jpg) .
 
-- **Scheduler.customlist** , Copy the file into your drive M connect project custom list folder. To do it just  right click over the  custom list folder and select add files and look for the Scheduler.customlist, after successfully added the file you can open it, if your are connected to the drive you can start editing the scheduler parameters.
+- **Scheduler.customlist** , Copy the file into your drive Mconnect project "custom list folder", to do it just  right click over the  custom list folder and select add files (look for path where you had  unzip the repository) the file to add is **Scheduler.customlist**, after successfully added it you can open it and if your are connected to the drive you can start editing the scheduler parameters.
 
-  ![Custom list ](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/CustomList.jpg)
+  ![Custom list ](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/CustomList.jpg).
+
+  
 
   
 
