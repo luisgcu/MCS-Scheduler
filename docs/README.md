@@ -14,7 +14,12 @@ Within our AC drive portfolio  we don't have   any that can do time based start/
 ### Software Requirements.
 
 - Machine Control Studio v1.8.0 [LINK](http://www.controltechniques.com/CTDownloads/SharePoint/Download.aspx?SiteID=4&ProductID=150&DownloadID=5149&VersionID=7589)
+
 - Connect Drive Commissioning Software  [LINK](http://www.controltechniques.com/CTDownloads/SharePoint/Download.aspx?SiteID=4&ProductID=150&DownloadID=6041&VersionID=8669)
+
+  
+
+------
 
 ### How it works.
 
@@ -42,7 +47,34 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 ![The 3 Scheduler Instances](https://github.com/luisgcu/MCS-Scheduler/blob/master/docs/Scheduler%20general%20view.jpg)
 
-### Detailed Setup
+**Macro that set the schedulers output command to the  drive RunFwd**.
+
+We have a macro within the MCS program that setup some  of the drive parameters  to be able to link the schedulers output  [M18.P050]  to the drive Run forward command [M06.P030].
+
+The Parameter that activate that macro is [M18.P029] the value to have the macro run by the PLC is = 1234 the macro runs once in the PLC.
+
+```c
+//macro to setup the  drive to start stop based on the scheduler
+IF (gvl.enbl_mcr =1234 AND first_shoot=TRUE) THEN   // gvl.enbl_mcr 	:= M18.P029; 	
+	M08.P022	:=	0.00; 		//clear destination [default is M06.030] RunFwd
+	M09.P004	:=	18.050;   	// Logic Fucntion 1 source1-->Asigns the Schduler ouput to the  funtion 
+    M09.P006    :=  0.00;	    // Logic Function 1 Source 2-->Make sure the source is clear
+	M09.P007    :=  TRUE;       // Logic Function 1 Source 2 invert
+	M09.P008    :=  FALSE;      // Logic Function 1 Output invert. 
+	M09.P010    :=  6.030;      // Logic Funtion 1 Destination  set to Pr [6.030] RunFwd
+	M10.P000	:=	1001;    	//Save Parameters
+	M10.P038	:= 	100; 	 	//Reset Drive
+	Wait_Time(T#400MS);         //Delay for 400ms after save and reset. 
+	first_shoot := FALSE;       //Run this  section once once	
+END_IF
+
+```
+
+
+
+------
+
+###  Setup the Scheduler using Unidrive M Connect.
 
 **1-** Clone this repository to a location in  your PC, to do that  just click "clone or download"  and the click download  as ZIP. 
 
