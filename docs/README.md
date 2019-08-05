@@ -54,7 +54,7 @@ The 3 scheduler instances are combined by a logic OR  as we show below .  The OR
 
 **3-** The binfiles_drives folder have the binary file compiled for M600/700/701, using the Unidrive M connect upload the PLC program.
 
-**4-**With   unidrive M connect you will be able to download the scheduler PLC program to the drive. Make sure you pick the correct binary file name that match the drive you are connected. 
+**4-**  With   unidrive M connect you will be able to download the scheduler PLC program to the drive. Make sure you pick the correct binary file name that match the drive you are connected. 
 
 ![DEPLOY USER PROG](https://github.com/luisgcu/RTC-Scheduler/blob/master/docs/DeployUserProgram%20Mconnect.jpg)
 
