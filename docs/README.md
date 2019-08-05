@@ -57,7 +57,8 @@ The Parameter that activate that macro is [M18.P029] the value to have the macro
 //macro to setup the  drive to start stop based on the scheduler
 IF (gvl.enbl_mcr =1234 AND first_shoot=TRUE) THEN   // gvl.enbl_mcr := M18.P029; 	
 	M08.P022:=	0.00; 	//clear destination [default is M06.030] RunFwd
-	M09.P004:=	18.050; // Logic Fucnt 1 source1-->Asigns the Schduler output to the  function 
+	M09.P004:=	18.050; // Logic Fucnt 1 source1-->Asigns the Schduler output to the    
+                        // function 
     M09.P006:=  0.00;	// Logic Funct 1 Source 2-->Make sure the source is clear
 	M09.P007:=  TRUE;   // Logic Funct 1 Source 2 invert
 	M09.P008:=  FALSE;  // Logic Funct 1 Output invert. 
